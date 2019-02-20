@@ -1,10 +1,449 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<a href="\docs\HCR\index.html">HCR</a>
+
+<!-- --> <!--Zo zet je aantekeningen in een Text-->
+
+
+
+<!--
+    Hieronder zijn de <tags> die gebruikt zijn in deze pagina uitgelegd
+
+    <!DOCTYPE html>     - Prerequisite of a HTML page
+
+    <title></title>      - Title of the webpage (Can be seen from the tab)
+    <link rel="stylesheet" type="text/css" href="style.css"> (Link met CSS bestand)
+
+    
+    Buttons met directe link
+    <center><form action="https://linkedin.com/in/pryesh-briedjlal" target="_blank" method="GET">
+        <input type="submit" name="Linkedin" value="Linkedin Profiel">
+    </form></center>
+
+    <center><form action="blog.html" method="GET">
+        <input type="submit" name="Blog" value="Blog">
+    </form></center>
+    
+    Hyperlink
+    <a href="https://linkedin.com/in/pryesh-briedjlal" target="_blank">Linkedin</a>
+    
+
+    *Stuffs
+    <br>                - Breakline
+    <p></p>             - Paragraph
+    <ul></ul>           - Constructor of a Unordened list
+    <ol></ol>           - Constructor of a Ordened list
+    <li></li>           - Item in a list
+    <marquee></marquee> - Moving text
+    <hr>                - Horizontal linebreak
+
+    
+    *HTML Headings (Going down in size from 1)  
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+
+    *HTML Formatting Elements
+    <b></b>             - Bold text
+    <strong></strong>   - Important text
+    <i></i>             - Italic text
+    <em></em>           - Emphasized text
+    <mark></mark>       - Marked text
+    <small></small>     - Small text
+    <del></del>         - Deleted text
+    <ins></ins>         - Inserted text
+    <sub></sub>         - Subscript text
+    <sup></sup>         - Superscript text
+
+
+
+<style> Style settings waar kleur en background worden weergeven 
+    h1 {color: red;}
+    p {color: black; word-break: keep-all; text-align: justify;}
+    body {margin:25px;padding:0;}
+    a {color: salmon}
+    li {color: salmon}
+    h3 {color: salmon}
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+    Button input syntax
+     <input type="submit" name="submit" value="Submit" action="popup" 
+        onclick="window.open('sabon.html','popup','width=600,height=400')">
+
+
+-->
+
+
+<html lang="en-US"> <!--Taal waarin de pagina wordt weergeven-->
+<meta charset="UTF-8" > <!--Encoding die je pagina gebruikt-->
+<meta name=description content="Portifolio van Pryesh">
+<meta name="keywords" content="BIM Pryesh Portifolio Student Rotterdam Business School">
+
+    
+<style> <!-- Style settings waar kleur en background worden weergeven-->
+    
+    .flower{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0px;
+    }
+
+    .page{
+        transform: scale(1.0);
+        margin-bottom: 250px;
+    }
+
+    .container{
+        width: 900px;
+        margin: auto;
+    }
+
+    p {
+        color: black;
+        word-break: keep-all;
+        text-align: justify;
+        margin-left: 10px;
+      }
+
+
+    .intro{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .title{
+        display: inline;
+        word-break: break-all;
+        word-wrap: break-word;
+    
+    }
+
+    
+    .form{
+        padding-top: 20px;
+        
+    }
+    
+    
+    .form .formgroup label{
+        padding-bottom: 15px;
+             
+    }
+    
+    .formgroup lable{
+        display: block;
+        
+    }
+    
+    .formgroup input{
+        padding: 8px;
+        width: 100%;
+    }
+    
+    .radio{
+        margin-left: 10px;
+    }
+    
+    
+
+    body {background-color: ghostwhite;}
+
+    heading{margin-top: 0px;}
+
+    a {color: navy;}
+
+    a:hover {color: salmon;}
+
+    h1 {color: darkslategrey;}
+
+    li {color: salmon;}
+
+    h3 {color: salmon;}
+    
+    
+    *,
+    *:after,
+    *::before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: salmon;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1em;
+    }
+    
+    nav a:hover,
+    nav a:focus {
+	outline: none;
+    }
+    
+    
+    /* Effect 14: border switch */
+    .cl-effect-14 a {
+        padding: 0 20px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .cl-effect-14 a::before,
+    .cl-effect-14 a::after {
+        position: absolute;
+        width: 45px;
+        height: 2px;
+        background: black;
+        content: '';
+        opacity: 0.2;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        pointer-events: none;
+    }
+
+    .cl-effect-14 a::before {
+        top: 0;
+        left: 0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+
+    .cl-effect-14 a::after {
+        right: 0;
+        bottom: 0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform-origin: 100% 0;
+        -moz-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
+
+    .cl-effect-14 a:hover::before,
+    .cl-effect-14 a:hover::after,
+    .cl-effect-14 a:focus::before,
+    .cl-effect-14 a:focus::after {
+        opacity: 1;
+    }
+
+    .cl-effect-14 a:hover::before,
+    .cl-effect-14 a:focus::before {
+        left: 50%;
+        -webkit-transform: rotate(0deg) translateX(-50%);
+        -moz-transform: rotate(0deg) translateX(-50%);
+        transform: rotate(0deg) translateX(-50%);
+    }
+
+    .cl-effect-14 a:hover::after,
+    .cl-effect-14 a:focus::after {
+        right: 50%;
+        -webkit-transform: rotate(0deg) translateX(50%);
+        -moz-transform: rotate(0deg) translateX(50%);
+        transform: rotate(0deg) translateX(50%);
+    }
+    
+</style> 
+    
+    
+    
+    
+    
+    
+<body class="page">
+<head>
+<title>Pryesh</title> <!--Title van je pagina(dit staat op het tabblad)-->
+    <div><img class="flower" src="https://i.imgur.com/WmmnLR1.png" alt="Header" width="100%" height="250px">        
+    </div>
+</head>
+    
+<marquee behavior="scroll" direction="left">Student Business IT and Management at Rotterdam Business School </marquee> <!-- Scroling text-->
+<div class="container">
+<br><br>
+    
+
+    
+    
+    <center><a href="https://i.imgur.com/ckl4saz.jpg">
+    <img src="https://i.imgur.com/J7Rm4Y5.jpg" alt="My Face" width="250" height="300">
+    </a></center>
+    
+    
+    <center><h1>Ik ben Pryesh Briedjlal</h1></center> <!--Center tag-->
+    
+       <center> <nav class="cl-effect-14">
+
+			<a href="https://linkedin.com/in/pryesh-briedjlal" target="_blank">Linkedin</a>
+			<a href="/AIV01">AIV01</a>
+			<a href="\docs\HCR\index.html">HCR</a>
+			<a href="\docs\DEV\index.html">DEV</a>
+
+        </nav></center> 
+    
 <br>
-<a href="\docs\DEV\index.html">DEV</a>
+<hr>
+
+    <div class="title" style="display: inline; word-break: break-all; word-wrap: break-word;">
+    
+<p class="intro" draggable="true">Deze site dient ervoor om mijn portfolio weer te geven op een duidelijke en heldere manier, hier kunt u ook mijn CV zien met alle werkervaringen die ik opgedaan heb. Ik ben van Surinaamse afkomst maar ben wel geboren in Nederland (in Gouda). Ik woonde tot 2008 in Moordrecht en ben sinds dien naar Den Haag verhuist waar ik nog steeds woon. Huidig volg ik de opleiding Business and IT management aan de Rotterdam Business School.</p> <!-- draggable="true" Maakt de text draggable om te verplaatsen, maakt de text ook oncopyeerbaar-->
+        
+
+<center><p class="intro" draggable="true" >
+    <strong>Personalia<br></strong>
+    Naam: 			Pryesh Briedjlal<br>		
+    Adres:			xxxxx		<br>
+    Telefoonnummer:	xxxxx<br>
+    E-mailadres:		xxxxx<br>
+    Geboortedatum:	05-07-1998<br>
+    Geboorteplaats: 	Gouda<br>
+    Geslacht:		Man<br>
+    Nationaliteit:		Nederlandse<br>
+    Burgerlijke staat: 	Ongehuwd<br>    
+
+    
+    </p></center>
+        <hr>
+        
+<ul draggable="true"> <!--Start item list-->
+    <li>DOELSTELLING</li>
+    <p>Ik ben een nieuwsgierige jongen die graag de leiding neemt en door middel van communicatie zo efficiënt mogelijk de beste resultaten wilt behalen. Hierbij wil ik een grote rol spelen en mensen graag helpen die niet aan standaarden van de groep kunnen voldoen.</p>
+    <li>ACADEMISCH</li> <!--Item in list-->
+    <a href="https://i.imgur.com/Bz2udJp.png">
+    <img src="https://i.imgur.com/Bz2udJp.png" alt="My Face" width="275" height="125">
+    </a>
+    <p>2010-2016		HAVO op het Chirstelijk lyceum Zandvliet (te ’s-Gravenhage)<br>
+        Examenvakken: Nederlands, Engels, Economie, M&O, Geschiedenis
+ 		Aardrijkskunde, Wiskunde A<br>
+        Diploma: Ja<br>
+</p>
+    <li>VAARDIGHEDEN EN TALENTEN</li>
+        <p> <strong>Programmeertalen</strong>
+            Basic C# class based programmeren<br>
+            - Windows Forms<br>
+            - Xamarin Froms<br>
+            Basic Java class based programmeren<br>
+            - Jframe Library<br>
+            - Android studio<br>
+            Python Ervaring<br><br>
+
+        <p><strong>Tools</strong><br>Google workspace (Drive, Docs, Slides en Sheets)<br>PostgreSQL<br>Visual Studio (Code)<br>Microsoft Visio<br>Unified Modeling Language (UML)<br>Visual Paradigm<br>Astah Professional<br>MySQL<br>DaVinci Resolve<br></p><br>
+    <li>WERKERVARING</li>
+    
+        <p> <strong>Proeflokaal Bregje - Filiaal Den-Haag</strong><br>
+            Jun 2017 - April 2018 (10 Maanden)<br>
+            Functie:      - spoelkeukenmedewerker<br>
+ 			Adres:Laan van Meerdervoort 209, 2517 BC Den Haag<br>
+            Website: <a href="http://www.proeflokaalbregje.nl" target="_blank">http://www.proeflokaalbregje.nl</a><br>
+ 			Telefoonnummer: 070 345 5945<br>
+ 			E-mail: denhaag@proeflokaalbregje.nl<br>
+
+ 				     <br><br>
+
+            <strong>Stichting Vóór Welzijn</strong><br>
+            Feb 2015-jun 2015
+ 			Functie:     Stagiaire <br>
+ 				      - posters maken<br>
+ 				      - facebook pagina opzetten<br>
+ 				      - geholpen met interactieve communicatie van het wijkcentrum<br>
+ 			Adres: 	     1. Jan van Riebeekplein 90, 2594 WR ’s-Gravenhage<br>
+  				     2. Johannes Camphuijsstraat 25, 2593 CH ’s-Gravenhage<br>
+ 			Telefoonnummer:	1. 070 – 315 10 44<br>
+						2. 070 – 205 25 60 <br>
+			E-mail:			secretariaat@voorwelzijn.nl<br>
+
+    </p><br>
+    <li>TALEN</li>
+        <p>Nederlands:			Moedertaal		-	Zeer Goed<br>
+           Engels:				Basisvaardigheid -		Goed</p>
+</ul> <!--End Item list-->
+<br><br>
+    </div>
+    
+<hr>
+    
+    <center><h2>Contact</h2></center>
+    <center><h3>U kunt met het onderstaand formulier contact opnemen.</h3></center>
+<br>
+    
+    
+<form class="form" action="https://formspree.io/devettegangster@gmail.com"
+      method="POST">
+        <div class="formgroup">
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="Enter your name">
+        </div>
+    <br>
+        <div class="formgroup">
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Enter your last name">
+        </div>
+    <br>
+        <div class="formgroup">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Enter your Email">
+        </div>
+    <br>
+        <div class="formgroup">
+            <label>Birthday:</label>
+            <input type="date" name="birthday">
+        </div>
+    <br>
+        <div class="formgroup">
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+    <br>
+        <div class="radio">
+            <input type="radio" name="Idk" value="Iets1" checked> Iets1<br>
+            <input type="radio" name="Idk" value="Iets2"> Iets2<br>
+            <input type="radio" name="Idk" value="Iets3"> Iets3
+        </div>
+    <br>
+        <div class="formgroup">
+            <textarea class="formgroup" name="message" rows="10" cols="128" placeholder="Enter your comment here"></textarea>
+        </div>
+    <br>
+    <input type="submit" name="submit" value="Submit" action="popup" 
+  onclick="window.open('sabon.html','popup','width=600,height=400')">
+  
+</form>
+
+    <br><hr>
+        
+<footer>
+    <p>Copyright &copy; 2018, Pryesh Briedjlal</p>
+</footer>
+    </div>
+
+
 </body>
 </html>
+
