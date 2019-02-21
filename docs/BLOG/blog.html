@@ -3,224 +3,81 @@
 <html lang="en-US"> <!--Taal waarin de pagina wordt weergeven-->
 <meta charset="UTF-8"> <!--Encoding die je pagina gebruikt-->
 <link rel="icon" href="\docs\Sources\Infinite_tsukuyomi.png">
+<link rel="stylesheet" type="text/css" href="style.css">
 
-    
-<style>
-    
-    h1, h3{
-        color: salmon;
-    }
-    
-    .flower{
-    width: 100%;
-    height: 250px;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 0px;
-    }
+<head>
+ <title>Pryesh</title>
+</head> 
 
-    .page{
-        transform: scale(1.0);
-        margin-bottom: 250px;
-    }
-
-    .container{
-        width: 900px;
-        margin: auto;
-    }
-
-
-    p {
-        color: black;
-        word-break: keep-all;
-        text-align: justify;
-    }
-
-
-    .intro{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-
-    .title{
-        float: center;
-        display: inline;
-        width: 265px;
-        word-break: break-all;
-        word-wrap: break-word;
-    }
-     
-    
-    *,
-    *:after,
-    *::before {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    
-    nav a {
-	position: relative;
-	display: inline-block;
-	margin: 15px 25px;
-	outline: none;
-	color: salmon;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 300;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1em;
-    }
-    
-    nav a:hover,
-    nav a:focus {
-	outline: none;
-    }
-    
-    
-    /* Effect 14: border switch */
-    .cl-effect-14 a {
-        padding: 0 20px;
-        height: 45px;
-        line-height: 45px;
-    }
-
-    .cl-effect-14 a::before,
-    .cl-effect-14 a::after {
-        position: absolute;
-        width: 45px;
-        height: 2px;
-        background: black;
-        content: '';
-        opacity: 0.2;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-        pointer-events: none;
-    }
-
-    .cl-effect-14 a::before {
-        top: 0;
-        left: 0;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: 0 0;
-        -moz-transform-origin: 0 0;
-        transform-origin: 0 0;
-    }
-
-    .cl-effect-14 a::after {
-        right: 0;
-        bottom: 0;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: 100% 0;
-        -moz-transform-origin: 100% 0;
-        transform-origin: 100% 0;
-    }
-
-    .cl-effect-14 a:hover::before,
-    .cl-effect-14 a:hover::after,
-    .cl-effect-14 a:focus::before,
-    .cl-effect-14 a:focus::after {
-        opacity: 1;
-    }
-
-    .cl-effect-14 a:hover::before,
-    .cl-effect-14 a:focus::before {
-        left: 50%;
-        -webkit-transform: rotate(0deg) translateX(-50%);
-        -moz-transform: rotate(0deg) translateX(-50%);
-        transform: rotate(0deg) translateX(-50%);
-    }
-
-    .cl-effect-14 a:hover::after,
-    .cl-effect-14 a:focus::after {
-        right: 50%;
-        -webkit-transform: rotate(0deg) translateX(50%);
-        -moz-transform: rotate(0deg) translateX(50%);
-        transform: rotate(0deg) translateX(50%);
-    }
-
-    
-    </style>
-    
-    <head>
-       <title>Pryesh</title>
-    </head> 
-    <body class="page">
-         <div class="container">
-        <header>
-            <center><h1>My Site</h1></center>
-        </header>
-        <hr>
-        <br>
-             
-             <center><nav class="cl-effect-14">
-                <a href="https://autummleaves.github.io/">Home</a>
-             
-             </nav></center>
-             
-            
-        <section>
-            <article class="post">
-                <h3>Blog post One</h3>
-                <center><small>Made on Monday</small></center>
-                <p>Iudicem magna dolor se aute. Ad veniam ullamco de ad laboris eu         vidisse. Quae 
-                    iis probant, commodo sed noster officia, in quis veniam duis proident si ut quid 
-                    dolore id incurreret ab irure tempor de lorem quid ubi aute aliquip si legam 
-                    tamen non dolore singulis efflorescere de labore occaecat si laboris. Mandaremus 
-                    eu quae voluptate. Ex aute iudicem praesentibus ut sunt proident consectetur ita 
-                    aute eruditionem offendit dolor voluptate, ut quae anim sed occaecat, summis 
-                    exercitation cernantur legam excepteur qui si quem vidisse, ut hic efflorescere, 
-                    nam ipsum eiusmod. Nam e noster ipsum enim, malis ubi quo veniam expetendis, ex 
-                    aliqua probant exercitation, litteris se velit fabulas.</p>
-                    <a href="post.html">Read More</a>
-            </article>
-        <br>
-            <article class="post">
-                <h3>Blog post Two</h3>
-                <center><small>Made on Tuesday</small></center>
-                <p>Iudicem magna dolor se aute. Ad veniam ullamco de ad laboris eu         vidisse. Quae 
-                    iis probant, commodo sed noster officia, in quis veniam duis proident si ut quid 
-                    dolore id incurreret ab irure tempor de lorem quid ubi aute aliquip si legam 
-                    tamen non dolore singulis efflorescere de labore occaecat si laboris. Mandaremus 
-                    eu quae voluptate. Ex aute iudicem praesentibus ut sunt proident consectetur ita 
-                    aute eruditionem offendit dolor voluptate, ut quae anim sed occaecat, summis 
-                    exercitation cernantur legam excepteur qui si quem vidisse, ut hic efflorescere, 
-                    nam ipsum eiusmod. Nam e noster ipsum enim, malis ubi quo veniam expetendis, ex 
-                    aliqua probant exercitation, litteris se velit fabulas.</p>
-                    <a href="post.html">Read More</a>
-            </article>
-        <br>
-            <article class="post">           
-              <h3>Blog post Three</h3>
-              <center><small>Made on Wednesday</small></center>
-              <p>Iudicem magna dolor se aute. Ad veniam ullamco de ad laboris eu             vidisse. Quae 
-                    iis probant, commodo sed noster officia, in quis veniam duis proident si ut quid 
-                    dolore id incurreret ab irure tempor de lorem quid ubi aute aliquip si legam 
-                    tamen non dolore singulis efflorescere de labore occaecat si laboris. Mandaremus 
-                    eu quae voluptate. Ex aute iudicem praesentibus ut sunt proident consectetur ita 
-                    aute eruditionem offendit dolor voluptate, ut quae anim sed occaecat, summis 
-                    exercitation cernantur legam excepteur qui si quem vidisse, ut hic efflorescere, 
-                    nam ipsum eiusmod. Nam e noster ipsum enim, malis ubi quo veniam expetendis, ex 
-                    aliqua probant exercitation, litteris se velit fabulas.</p>
-                    <a href="post.html">Read More</a>
-            </article>
-        
-        
-        </section>  
+<body class="page">
+   <div class="container">
+    <header>
+        <center><h1>My Site</h1></center>
+    </header>
     <hr>
+    <br>
 
-        <footer>
-            <p>Copyright &copy; 2018, Pryesh Briedjlal</p>
-        </footer>
-    
+    <center><nav class="cl-effect-14">
+        <a href="https://autummleaves.github.io/">Home</a>
+
+    </nav></center>
+
+
+    <section>
+        <article class="post">
+            <h3>Blog post One</h3>
+            <center><small>Made on Monday</small></center>
+            <p>Iudicem magna dolor se aute. Ad veniam ullamco de ad laboris eu         vidisse. Quae 
+                iis probant, commodo sed noster officia, in quis veniam duis proident si ut quid 
+                dolore id incurreret ab irure tempor de lorem quid ubi aute aliquip si legam 
+                tamen non dolore singulis efflorescere de labore occaecat si laboris. Mandaremus 
+                eu quae voluptate. Ex aute iudicem praesentibus ut sunt proident consectetur ita 
+                aute eruditionem offendit dolor voluptate, ut quae anim sed occaecat, summis 
+                exercitation cernantur legam excepteur qui si quem vidisse, ut hic efflorescere, 
+                nam ipsum eiusmod. Nam e noster ipsum enim, malis ubi quo veniam expetendis, ex 
+            aliqua probant exercitation, litteris se velit fabulas.</p>
+            <a href="post.html">Read More</a>
+        </article>
+        <br>
+        <article class="post">
+            <h3>Blog post Two</h3>
+            <center><small>Made on Tuesday</small></center>
+            <p>Iudicem magna dolor se aute. Ad veniam ullamco de ad laboris eu         vidisse. Quae 
+                iis probant, commodo sed noster officia, in quis veniam duis proident si ut quid 
+                dolore id incurreret ab irure tempor de lorem quid ubi aute aliquip si legam 
+                tamen non dolore singulis efflorescere de labore occaecat si laboris. Mandaremus 
+                eu quae voluptate. Ex aute iudicem praesentibus ut sunt proident consectetur ita 
+                aute eruditionem offendit dolor voluptate, ut quae anim sed occaecat, summis 
+                exercitation cernantur legam excepteur qui si quem vidisse, ut hic efflorescere, 
+                nam ipsum eiusmod. Nam e noster ipsum enim, malis ubi quo veniam expetendis, ex 
+            aliqua probant exercitation, litteris se velit fabulas.</p>
+            <a href="post.html">Read More</a>
+        </article>
+        <br>
+        <article class="post">           
+          <h3>Blog post Three</h3>
+          <center><small>Made on Wednesday</small></center>
+          <p>Iudicem magna dolor se aute. Ad veniam ullamco de ad laboris eu             vidisse. Quae 
+            iis probant, commodo sed noster officia, in quis veniam duis proident si ut quid 
+            dolore id incurreret ab irure tempor de lorem quid ubi aute aliquip si legam 
+            tamen non dolore singulis efflorescere de labore occaecat si laboris. Mandaremus 
+            eu quae voluptate. Ex aute iudicem praesentibus ut sunt proident consectetur ita 
+            aute eruditionem offendit dolor voluptate, ut quae anim sed occaecat, summis 
+            exercitation cernantur legam excepteur qui si quem vidisse, ut hic efflorescere, 
+            nam ipsum eiusmod. Nam e noster ipsum enim, malis ubi quo veniam expetendis, ex 
+        aliqua probant exercitation, litteris se velit fabulas.</p>
+        <a href="post.html">Read More</a>
+    </article>
+
+
+</section>  
+<hr>
+
+<footer>
+    <p>Copyright &copy; 2018, Pryesh Briedjlal</p>
+</footer>
+
 </div>
-    </body>
-        
+</body>
+
 </html>

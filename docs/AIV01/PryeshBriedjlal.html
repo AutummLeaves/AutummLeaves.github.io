@@ -82,282 +82,44 @@
         onclick="window.open('sabon.html','popup','width=600,height=400')">
 
 
--->
-
+    -->
 
 <html lang="en-US"> <!--Taal waarin de pagina wordt weergeven-->
 <meta charset="UTF-8" > <!--Encoding die je pagina gebruikt-->
 <meta name=description content="Portifolio van Pryesh">
 <meta name="keywords" content="BIM Pryesh Portifolio Student Rotterdam Business School">
+
 <link rel="icon" href="\docs\Sources\Infinite_tsukuyomi.png">
-    
-<style> <!-- Style settings waar kleur en background worden weergeven-->
-    
-    *,
-    *:after,
-    *::before {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    
-    
-    nav {
-        background-color: #0033ff;
-        
-    }
-    
-    nav a {
-	position: relative;
-    height: 40px;
-	display: inline-block;
-	margin: 15px 25px;
-	outline: none;
-	color: salmon;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 300;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1em;
-    }
-    
-    nav a:hover,
-    nav a:focus {
-	outline: none;
-    }
-    
-    
-    /* Effect 14: border switch */
-    .cl-effect-14 a {
-        padding: 0 20px;
-        height: 40px;
-        line-height: 40px;
-    }
-
-    .cl-effect-14 a::before,
-    .cl-effect-14 a::after {
-        position: absolute;
-        width: 40px;
-        height: 2px;
-        background: black;
-        content: '';
-        opacity: 0.2;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-        pointer-events: none;
-    }
-
-    .cl-effect-14 a::before {
-        top: 0;
-        left: 0;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: 0 0;
-        -moz-transform-origin: 0 0;
-        transform-origin: 0 0;
-    }
-
-    .cl-effect-14 a::after {
-        right: 0;
-        bottom: 0;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: 100% 0;
-        -moz-transform-origin: 100% 0;
-        transform-origin: 100% 0;
-    }
-
-    .cl-effect-14 a:hover::before,
-    .cl-effect-14 a:hover::after,
-    .cl-effect-14 a:focus::before,
-    .cl-effect-14 a:focus::after {
-        opacity: 1;
-    }
-
-    .cl-effect-14 a:hover::before,
-    .cl-effect-14 a:focus::before {
-        left: 50%;
-        -webkit-transform: rotate(0deg) translateX(-50%);
-        -moz-transform: rotate(0deg) translateX(-50%);
-        transform: rotate(0deg) translateX(-50%);
-    }
-
-    .cl-effect-14 a:hover::after,
-    .cl-effect-14 a:focus::after {
-        right: 50%;
-        -webkit-transform: rotate(0deg) translateX(50%);
-        -moz-transform: rotate(0deg) translateX(50%);
-        transform: rotate(0deg) translateX(50%);
-    }
-    
-    
-    
-    .flower{
-        width: 100%;
-        height: 250px;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 0px;
-    }
-
-    .page{
-        transform: scale(1.0);
-        margin-bottom: 250px;
-    }
-
-    .container{
-        width: 900px;
-        margin: auto;
-    }
-
-    p {
-        color: black;
-        word-break: keep-all;
-        text-align: justify;
-        font-family: Avenir Black;
-        font-size: 14px;
-        
-      }
-
-
-    .title{
-        display: inline;
-        word-break: break-all;
-        word-wrap: break-word;
-     
-    }
+<link rel="stylesheet" type="text/css" href="style.css">
 
     
-    .form{
-        padding-top: 20px;
-        
-    }
-    
-    
-    .form .formgroup label{
-        padding-bottom: 15px;
-             
-    }
-    
-    .formgroup lable{
-        display: block;
-        
-    }
-    
-    .formgroup input{
-        padding: 8px;
-        width: 100%;
-    }
-    
-    .radio{
-        margin-left: 10px;
-    }
-    
-    
+    <body class="page">
+        <head>
+            <title>Pryesh</title> <!--Title van je pagina(dit staat op het tabblad)-->
+            <center><hr class="separator"></center>
+        </head>
 
-    body {background-color: ghostwhite;}
-
-    heading{margin-top: 0px;}
-
-    a {color: navy;}
-
-    a:hover {color: salmon;}
-
-    h1{color: #0033ff}
-    
-    h2, h3 {color: #0033ff;}
-
-    li {list-style-type: decimal;
-        color: #0033ff;}
-    
-    
-    
-    .separator{
-    border-style: solid;
-    background-color: #0033ff;;
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    width: 900px;
-    
-        
-    }
-    
-
-    .face{
-        margin-bottom: 0px;
-        margin-right: 150px;
-    }
-    
-    .inside{list-style: circle}
-    
-    
-    .XLintro{
-        font-size: 50px;
-        color: #0033ff;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        
-    }
-    
-    .intro{
-        margin-left: 200px;
-        color: #0033ff;
-    }
-    
-    
-    .footer{
-        color: salmon;
-        background-color: #0033ff;
-        height: 40px;
-        text-align: center;
-        font-size: 20px;
-        margin: 0px;
-        
-    }
-    
-    hr {
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    
-</style> 
-    
-    
-
-    
-<body class="page">
-<head>
-<title>Pryesh</title> <!--Title van je pagina(dit staat op het tabblad)-->
-   <center><hr class="separator"></center>
-</head>
-    
-    <marquee behavior="scroll" direction="left">Student Business IT and Management at Rotterdam Business School </marquee> <!-- Scroling text-->
-<div class="container">
-        <br>
-        <br>
+        <marquee behavior="scroll" direction="left">Student Business IT and Management at Rotterdam Business School </marquee> <!-- Scroling text-->
+        <div class="container">
+            <br>
+            <br>
 
             <a class="face" href="https://i.imgur.com/ckl4saz.jpg">    
-            <img src="https://i.imgur.com/J7Rm4Y5.jpg" alt="My Face" width="140" height="180" align="right"></a>
+                <img src="https://i.imgur.com/J7Rm4Y5.jpg" alt="My Face" width="140" height="180" align="right"></a>
 
-            <h1 class="XLintro"><a href="https://www.linkedin.com/in/pryesh-briedjlal" target="_blank">Pryesh Briedjlal</a></h1>
+                <h1 class="XLintro"><a href="https://www.linkedin.com/in/pryesh-briedjlal" target="_blank">Pryesh Briedjlal</a></h1>
 
-            <p class="intro">Student nummer: 0952042<br>HTML/CSS Website toets</p>
-            <div align="Left"><h2>Intro Lifehacking voor Studenten</h2></div>
-
-
+                <p class="intro">Student nummer: 0952042<br>HTML/CSS Website toets</p>
+                <div align="Left"><h2>Intro Lifehacking voor Studenten</h2></div>
 
 
 
 
-        <hr>
 
-              <div> <center> <nav class="cl-effect-14">
+
+                <hr>
+
+                <div> <center> <nav class="cl-effect-14">
 
                     <a href="xxxxxxxPryeshBriedjlal.html"><strong>Home</strong></a>
                     <a href="http://lifehacking.nl" target="_blank"><strong>Lifehacking</strong></a>
@@ -365,59 +127,59 @@
 
                 </nav></center></div>
 
-        <hr>
+                <hr>
 
-            <div class="title">
+                <div class="title">
 
-                <h2>Lifehacking</h2>
+                    <h2>Lifehacking</h2>
 
-                        <p>Lifehacking gaat over slimmer werken en slimmer leven. Diverse auteurs schrijven op de site <a href="http://lifehacking.nl/" target="_blank">Lifehacking</a> over het snijvlak van kennismanagement, persoonlijke ontwikkeling, timemanagement en digitale innovaties.</p>
+                    <p>Lifehacking gaat over slimmer werken en slimmer leven. Diverse auteurs schrijven op de site <a href="http://lifehacking.nl/" target="_blank">Lifehacking</a> over het snijvlak van kennismanagement, persoonlijke ontwikkeling, timemanagement en digitale innovaties.</p>
 
-                <h2>Lifehacking voor Studenten</h2>
+                    <h2>Lifehacking voor Studenten</h2>
 
-                        <p>Op de site staat ook een artikel van Janine Sterenborg over Lifehacking voor studenten.<br>
+                    <p>Op de site staat ook een artikel van Janine Sterenborg over Lifehacking voor studenten.<br>
                         <a href=" http://lifehacking.nl/productiviteit-tips/hacktoschool-een-overzicht-van-handige-tools-en-technieken-voor-studenten/" target="_blank">#hacktoschool: een overzicht van 10 handige tools en technieken voor studenten</a>
 
-                <br>
+                        <br>
 
-                        Op deze pagina volgt een intro van dat artikel</p>
+                    Op deze pagina volgt een intro van dat artikel</p>
 
-                        <p>Als student heb je te maken met veel verschillende vakken waarvoor je huiswerk en projecten moet doen. Een standaard agenda voldoet niet om alle kleine taken binnen de grotere projecten te ordenen.
-                        Hoe manage je dat dan? Bijvoorbeeld met deze systemen:</p>
+                    <p>Als student heb je te maken met veel verschillende vakken waarvoor je huiswerk en projecten moet doen. Een standaard agenda voldoet niet om alle kleine taken binnen de grotere projecten te ordenen.
+                    Hoe manage je dat dan? Bijvoorbeeld met deze systemen:</p>
 
-                <h3>Een goed werkend to-do systeem</h3>
+                    <h3>Een goed werkend to-do systeem</h3>
 
-                        <p>Als student heb je te maken met veel verschillende vakken waarvoor je huiswerk en projecten moet doen. Een standaard agenda voldoet niet om alle kleine taken binnen de grotere projecten te ordenen. Hoe manage je dat dan? Bijvoorbeeld met deze systemen:</p>
+                    <p>Als student heb je te maken met veel verschillende vakken waarvoor je huiswerk en projecten moet doen. Een standaard agenda voldoet niet om alle kleine taken binnen de grotere projecten te ordenen. Hoe manage je dat dan? Bijvoorbeeld met deze systemen:</p>
+
+                    <ul>
+                        <li>Getting Things Done,</li>
+                        <p>Getting Things Done, oftewel GTD, komt neer op het leegmaken van je hoofd. Je zet al je projecten en to doÕs op papier (al dan niet digitaal) en onderhoudt deze lijsten dagelijks, wekelijks, maandelijks of jaarlijks. Bekijk deze video voor een introductie:</p>
+                        <iframe width="520" height="280" src="https://www.youtube.com/embed/Xduzwk04l2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                        <br>
+                        <p>Met Getting Things Done leer je om alles systematisch aan te pakken. Het is een behoorlijk proces om dit systeem te implementeren, maar vele mensen willen niet anders meer!</p>
+
+                        <p>Lees ons ultieme GTD-overzicht om een indruk te krijgen van GTD, of ga stap voor stap aan het werk met het (E-)boek van David Allen.</p>
+
+                        <li>To Do apps</li>
+                        <p>Vind je GTD too much? Er zijn diverse To Do Apps waar je al een eind mee komt als je ze consistent bijhoudt.</p>
+
+                        <p>Onze favorieten:</p>
 
                         <ul>
-                            <li>Getting Things Done,</li>
-                                <p>Getting Things Done, oftewel GTD, komt neer op het leegmaken van je hoofd. Je zet al je projecten en to doÕs op papier (al dan niet digitaal) en onderhoudt deze lijsten dagelijks, wekelijks, maandelijks of jaarlijks. Bekijk deze video voor een introductie:</p>
-                                <iframe width="520" height="280" src="https://www.youtube.com/embed/Xduzwk04l2E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                 <br>
-                                <p>Met Getting Things Done leer je om alles systematisch aan te pakken. Het is een behoorlijk proces om dit systeem te implementeren, maar vele mensen willen niet anders meer!</p>
-
-                                <p>Lees ons ultieme GTD-overzicht om een indruk te krijgen van GTD, of ga stap voor stap aan het werk met het (E-)boek van David Allen.</p>
-
-                            <li>To Do apps</li>
-                                    <p>Vind je GTD too much? Er zijn diverse To Do Apps waar je al een eind mee komt als je ze consistent bijhoudt.</p>
-
-                                    <p>Onze favorieten:</p>
-
-                                    <ul>
-                                        <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/to-do-app-any-do/" target="_blank">Any Do</a></li>
-                                        <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/overal-je-taken-binnen-handbereik-met-wunderlist/" target="_blank">Wunderlist</a></li>
-                                        <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/remember-the-milk-op-je-iphone-of-ipod-touch/" target="_blank">Remember The Milk</a></li>
-                                        <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/to-do-app-zonder-knoppen-clear/" target="_blank">Clear</a></li>
-                                        <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/agenda-en-manager-een-calendars-5/" target="_blank">Calendar 5 (een to do app en kalender in 1)</a></li>
+                            <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/to-do-app-any-do/" target="_blank">Any Do</a></li>
+                            <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/overal-je-taken-binnen-handbereik-met-wunderlist/" target="_blank">Wunderlist</a></li>
+                            <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/remember-the-milk-op-je-iphone-of-ipod-touch/" target="_blank">Remember The Milk</a></li>
+                            <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/to-do-app-zonder-knoppen-clear/" target="_blank">Clear</a></li>
+                            <li class="inside"><a href="http://lifehacking.nl/productiviteit-tips/agenda-en-manager-een-calendars-5/" target="_blank">Calendar 5 (een to do app en kalender in 1)</a></li>
 
 
-
-                                    </ul>
-
-                            <p>Op de site is de rest van het artikel te lezen. Volg de menu link om naar de site over Lifehacking te gaan</p>
 
                         </ul>
+
+                        <p>Op de site is de rest van het artikel te lezen. Volg de menu link om naar de site over Lifehacking te gaan</p>
+
+                    </ul>
 
                     <hr>
 
@@ -425,16 +187,16 @@
 
 
 
-    <nav> 
-        <footer>
-            <p class="footer">Copyright &copy; 2018, Pryesh Briedjlal</p>
-        </footer>
-    </nav>
-    
-    
-    </div>
+                <nav> 
+                    <footer>
+                        <p class="footer">Copyright &copy; 2018, Pryesh Briedjlal</p>
+                    </footer>
+                </nav>
 
 
-</body>
+            </div>
+
+
+       </body>
 </html>
 
