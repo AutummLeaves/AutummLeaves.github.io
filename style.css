@@ -171,6 +171,7 @@ nav a:focus {
     -webkit-transform: rotate(0deg) translateX(-50%);
     -moz-transform: rotate(0deg) translateX(-50%);
     transform: rotate(0deg) translateX(-50%);
+    background-color: salmon;
 }
 
 .cl-effect-14 a:hover::after,
@@ -179,4 +180,5 @@ nav a:focus {
     -webkit-transform: rotate(0deg) translateX(50%);
     -moz-transform: rotate(0deg) translateX(50%);
     transform: rotate(0deg) translateX(50%);
+    background-color: salmon;
 }
