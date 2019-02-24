@@ -95,7 +95,7 @@
 <meta name=description content="Portifolio van Pryesh">
 <meta name="keywords" content="BIM Pryesh Portifolio Student Rotterdam Business School">
 <link rel="icon" href="\docs\Sources\Infinite_tsukuyomi.png">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css" id="stylesheet">
 
     
     
@@ -132,6 +132,28 @@
            </nav></center> 
 
            <br>
+
+           <center>
+               <button type="button" onclick="light()">Light Mode</button>
+               <button type="button" onclick="dark()">Dark Mode</button>
+           </center>
+
+            <script>
+                function light() {
+                    var stylesheet = document.getElementById("stylesheet");
+                    stylesheet.setAttribute('href', "style.css");
+
+                }
+
+                function dark() {
+                    var stylesheet = document.getElementById("stylesheet");
+                    stylesheet.setAttribute('href', "dark.css");
+
+                }
+
+
+            </script>
+
            <hr>
 
            <div class="title" style="display: inline; word-break: break-all; word-wrap: break-word;">
