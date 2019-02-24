@@ -134,23 +134,16 @@
            <br>
 
            <center>
-               <button type="button" onclick="light()">Light Mode</button>
-               <button type="button" onclick="dark()">Dark Mode</button>
+               <button type="button" onclick="setStyleSheet('style.css')">Light Mode</button>
+               <button type="button" onclick="setStyleSheet('dark.css')">Dark Mode</button>
            </center>
 
             <script>
-                function light() {
+                function setStyleSheet(url) {
                     var stylesheet = document.getElementById("stylesheet");
-                    stylesheet.setAttribute('href', "style.css");
-
+                    stylesheet.setAttribute('href', url);
                 }
-
-                function dark() {
-                    var stylesheet = document.getElementById("stylesheet");
-                    stylesheet.setAttribute('href', "dark.css");
-
-                }
-
+                
 
             </script>
 
