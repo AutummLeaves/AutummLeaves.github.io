@@ -74,15 +74,15 @@ p {
 
 heading{margin-top: 0px;}
 
-a {color: navy;}
+a {color: red;}
 
-a:hover {color: salmon;}
+a:hover {color: red;}
 
-h1 {color: darkslategrey;}
+h1 {color: red;}
 
-li {color: salmon;}
+li {color: red;}
 
-h3 {color: salmon;}
+h3 {color: red;}
 
 
 *,
@@ -98,7 +98,7 @@ nav a {
     display: inline-block;
     margin: 15px 25px;
     outline: none;
-    color: salmon;
+    color: red;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -125,7 +125,7 @@ nav a:focus {
     position: absolute;
     width: 45px;
     height: 2px;
-    background: black;
+    background: white;
     content: '';
     opacity: 0.2;
     -webkit-transition: all 0.3s;
