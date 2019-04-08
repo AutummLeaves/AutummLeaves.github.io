@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en-US"> <!--Taal waarin de pagina wordt weergeven-->
 <meta charset="UTF-8" > <!--Encoding die je pagina gebruikt-->
-<meta name=description content="">
-<meta name="" content="">
-<link rel="icon" href="">
-<link rel="stylesheet" type="text/css" href="style.css">
+<meta name=description content="Portifolio van Pryesh">
+<meta name="keywords" content="BIM Pryesh Portifolio Student Rotterdam Business School">
+<link rel="icon" href="\docs\Sources\Infinite_tsukuyomi.png">
+<link rel="stylesheet" type="text/css" href="style.css" id="stylesheet">
 
-
-<header>
-	<div>
-		<img class="flower" src="https://i.imgur.com/WmmnLR1.png" alt="Header" width="100%" height="250px">        
-	</div>
-</header>
-
+<head>
+	<title>PHP Ervaring</title>
+</head>
 
 <body class="page">
-	<div class="container">
-		<div class="oborder">
-			<h1>Functional Button</h1>
+        <head>
+            <title>Pryesh</title> <!--Title van je pagina(dit staat op het tabblad)-->
+            <div><img class="flower" src="https://i.imgur.com/WmmnLR1.png" alt="Header" width="100%" height="250px" id="flower">        
+            </div>
+        </head>
 
-			<div class="border">
-				<form action="https://help.github.com/en/articles/what-is-github-pages">
-					<input type="submit" name ="O" value="Press to Turn On!" accesskey="s">
-				</form>
+        <div class="container">
+            <br><br>
 
-				<form action="https://help.github.com/en/articles/what-is-github-pages" >
-					<input type="submit" name ="Q" value="Press to Shut Down!" accesskey="s">
-				</form>
-			</div>
+            <center> <nav class="cl-effect-14">
 
-			<div class="mborder">
+               <a href="https://linkedin.com/in/pryesh-briedjlal" target="_blank">Linkedin</a>
+               <a href="\docs\AIV01\PryeshBriedjlal.html">AIV01</a>
+               <!--<a href="\docs\HCR\index.html">HCR</a>-->
+               <a href="\docs\DEV\index.html">DEV</a>
+               <a href="\docs\BLOG\blog.html">BLOG</a>
 
-				<?php
-				
-				define("on", "On");
-				define("off", "Off");
+           </nav></center> 
 
-				if(isset($_POST['O'])){
+           <br>
 
-					echo "Button is ".on;
+           <center>
+               <button type="button" onclick="setStyleSheet('style.css'), setFlower('https://i.imgur.com/WmmnLR1.png')">Light Mode</button>
+               <button type="button" onclick="setStyleSheet('dark.css'), setFlower('https://i.imgur.com/zOXGJgE.png')">Dark Mode</button>
+           </center>
 
-				}
+            <script>
+                function setStyleSheet(url) {
+                    var stylesheet = document.getElementById("stylesheet");
+                    stylesheet.setAttribute('href', url);
+                }
 
-				if(isset($_POST['Q'])){
+                function setFlower(url) {
+                    var flower = document.getElementById("flower");
+                    flower.setAttribute('src', url);
+                }
 
-					echo "Button is ".off;
+            </script>
 
-				}
+           <hr>
 
-				?>
-			</div>
-		</div>
-	</div>
-</body>
+
+            <br><hr>
+
+            <footer>
+                <p>Copyright &copy; 2018, Pryesh Briedjlal</p>
+            </footer>
+        </div>
+
+
+    </body>
+
+<footer>
+
+</footer>
 
 </html>

@@ -1,33 +1,19 @@
 .flower{
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  padding: 0px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0px;
 }
 
 .page{
-  transform: scale(1.0);
-  margin-bottom: 250px;
+    transform: scale(1.0);
+    margin-bottom: 250px;
+    background-color: ghostwhite;
 }
 
 .container{
-  margin-top: 10px;
-  margin-left: 250px;
-  width: 500px;
-  height: 500px;
-  background-image: url('https://i.imgur.com/mk5jVNQ.png');
-  background-repeat: no-repeat;
-}
-
-.oborder{
-  width: 250px;
-  height: 250px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
-  position: relative;
-  left: 132px;
-  top: 109px;
+    width: 900px;
+    margin: auto;
 }
 
 .border {
@@ -37,12 +23,160 @@
   margin: 0;
 }
 
-.mborder{
-  width: 150px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin-top: 25px;
+
+p {
+    color: black;
+    word-break: keep-all;
+    text-align: justify;
+    margin-left: 10px;
 }
 
 
+.intro{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
+
+.title{
+    display: inline;
+    word-break: break-all;
+    word-wrap: break-word;
+    
+}
+
+
+.form{
+    padding-top: 20px;
+    
+}
+
+
+.form .formgroup label{
+    padding-bottom: 15px;
+    
+}
+
+.formgroup lable{
+    display: block;
+    
+}
+
+.formgroup input{
+    padding: 8px;
+    width: 100%;
+}
+
+.radio{
+    margin-left: 10px;
+}
+
+
+heading{margin-top: 0px;}
+
+a {color: navy;}
+
+a:hover {color: salmon;}
+
+h1 {color: darkslategrey;}
+
+li {color: salmon;}
+
+h3 {color: salmon;}
+
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: salmon;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1em;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+
+/* Effect 14: border switch */
+.cl-effect-14 a {
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.cl-effect-14 a::before,
+.cl-effect-14 a::after {
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background: black;
+    content: '';
+    opacity: 0.2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.cl-effect-14 a::before {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.cl-effect-14 a::after {
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::before,
+.cl-effect-14 a:focus::after {
+    opacity: 1;
+}
+
+.cl-effect-14 a:hover::before,
+.cl-effect-14 a:focus::before {
+    left: 50%;
+    -webkit-transform: rotate(0deg) translateX(-50%);
+    -moz-transform: rotate(0deg) translateX(-50%);
+    transform: rotate(0deg) translateX(-50%);
+    background-color: salmon;
+}
+
+.cl-effect-14 a:hover::after,
+.cl-effect-14 a:focus::after {
+    right: 50%;
+    -webkit-transform: rotate(0deg) translateX(50%);
+    -moz-transform: rotate(0deg) translateX(50%);
+    transform: rotate(0deg) translateX(50%);
+    background-color: salmon;
+}
