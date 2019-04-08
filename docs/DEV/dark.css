@@ -29,6 +29,8 @@ p {
     word-break: keep-all;
     text-align: justify;
     margin-left: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 
